@@ -5,22 +5,22 @@
     "loglevel": "warning"
   },
   "inbound": {
-    "port": 9000, //(此端口与nginx配置相关)
+    "port": 9000, //nginx
     "listen": "127.0.0.1",
     "protocol": "vmess",
     "settings": {
       "clients": [
         {
-          "id": "eb950add-608e-409d-937f-e797324387093z", //你的UUID， 此ID需与客户端保持一致
+          "id": "eb950add-608e-409d-937f-e797324387093z", //nginx
           "level": 1,
-          "alterId": 64 //此ID也需与客户端保持一致
+          "alterId": 64 //nginx
         }
       ]
     },
    "streamSettings":{
       "network": "ws",
       "wsSettings": {
-           "path": "/v2ray" //与nginx配置相关
+           "path": "/v2ray" //nginx
       }
    }
   },
